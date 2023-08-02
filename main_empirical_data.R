@@ -22,9 +22,9 @@ for(settings in c(2)){
   source(str_c(wd.code, "load_settings.R"))
   
   ##### Load data
-  file <- "2023-06-15_master_with_splines.csv"
-  source(str_c(wd.code, "load_data.R"))
-  # source(str_c(wd.code, "empirical_factors.R"))
+  file <- <ENTER YOUR OWN FILENAME HERE>
+  source(str_c(wd.code, "load_data.R")) # file that loads data and converts it to the correct shape
+  source(str_c(wd.code, "empirical_factors.R"))
   
   ##### Estimate initial parameters
   source(str_c(wd.code, "estimate_initial_factors.R"))
