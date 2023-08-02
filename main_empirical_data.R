@@ -27,11 +27,11 @@ for(settings in c(2)){
   # source(str_c(wd.code, "empirical_factors.R"))
   
   ##### Estimate initial parameters
-  source(str_c(wd.code, "initial_factors.R"))
-  if(settings %in% c(7)){
-    source(str_c(wd.code, "initial_parameters_nonstat.R"))
+  source(str_c(wd.code, "estimate_initial_factors.R"))
+  if(settings %in% c(7)){ # manually choose if you want to estimate the statDNS or the nonstatDNS models
+    source(str_c(wd.code, "estimate_initial_parameters_nonstat.R"))
   } else if(settings == 4){
-    source(str_c(wd.code, "initial_parameters_stat.R"))
+    source(str_c(wd.code, "estimate_initial_parameters_stat.R"))
   }
   
   ##### MLE
